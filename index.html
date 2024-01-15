@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>katik persegi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header id="nav-bar">
+        <h1> Katik Persegi</h1>
+    </header>
+    
+
+    <div class="div-tabel">
+        <!--luas segitiga-->
+        <section class="section-tabel">
+            <label for="" id="luas-persegi" class="label-tabel">Hitung Luas Persegi</label>
+            <div class="keteranganpersegi">
+                <p class="keterangan">keterangan</p>
+                <p>L = luas</p>
+                <p>s = sisi</p>
+            </div>
+
+            <form class="input" id="inputLuas">
+                <input type="number" id="input-sisi-luas" class="katik-input" placeholder="masukan sisi">
+            </form>
+
+            <div class="buttons">
+                <button class="tombol" onclick="hitungLuas()">hitung</button>
+                <input type="button" class="tombol" onclick="resetLuas()" value="Reset">
+            </div>
+
+            <div id="keluaranLuas" class="keluaranHasil"></div>
+
+            <div class="footer">
+                <div>
+                <p>Rumus</p>
+                <p>L = s x s</p>
+                </div>
+                <a href="https://www.youtube.com/" class="navigation">
+                    <button class="tombol">penjelasan</button>
+                </a>
+            </div>
+        </section>
+
+        <!--keliling segitiga-->
+        <section class="section-tabel">
+            <label for="" id="keliling-segitiga" class="label-tabel">Hitung Keliling Segitiga</label>
+            <div class="keterangansegitiga">
+                <p class="keterangan">keterangan</p>
+                <p>K = keliling</p>
+                <p>s = sisi</p>
+            </div>
+
+            <form class="input" id="inputKeliling">
+                <input type="number" id="input-sisi-keliling" class="katik-input" placeholder="masukan sisi">
+            </form>
+
+            <div class="buttons">
+                <button class="tombol" onclick="hitungKeliling()">hitung</button>
+                <input type="button" class="tombol" onclick="resetKeliling()" value="Reset">
+            </div>
+
+            <div id="keluaranKeliling" class="keluaranHasil"></div>
+
+            <div class="footer">
+                <div>
+                <p>Rumus</p>
+                <p>K = 4 x s</p>
+                </div>
+                <a href="https://www.youtube.com/" class="navigation">
+                    <button class="tombol">penjelasan</button>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
